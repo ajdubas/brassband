@@ -1,5 +1,5 @@
 """
-brassband.py
+Brassband.
 
 Tools for modelling and analysis of UK brass band grading tables.
 
@@ -142,7 +142,7 @@ def analyse(filename, nPromoted, nRelegated, nSamplesPerBand=1000,
                   "{: 5.1f}\t".format(stayPercent) +
                   "{:5.1f}".format(relegatedPercent))
             continue
-            
+
         # create empty arrays
         promoted = np.zeros(nPlayed)
         stay = np.zeros(nPlayed)
@@ -188,5 +188,5 @@ def analyse(filename, nPromoted, nRelegated, nSamplesPerBand=1000,
         print("-"*32)
         for j in range(nPlayed):
             print(" {:2d}\t{: 5.1f}\t{: 5.1f}\t{:5.1f}".format(j+1,
-                promotedPercent[j], stayPercent[j], relegatedPercent[j]))
+                  promotedPercent[j], stayPercent[j], relegatedPercent[j]))
     return
